@@ -3,11 +3,11 @@ class Htp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.brown[500],
+      backgroundColor: Colors.blueGrey[300],
       appBar: AppBar(
-        title: Text('How to Play?'),
+        title: Text('How to Play?', style: TextStyle(color: Colors.black, fontSize: 28),),
         centerTitle: true,
-        backgroundColor: Colors.brown[800],
+        backgroundColor: Colors.blueGrey[700],
         elevation: 0.0,
       ),
       body: SingleChildScrollView(
@@ -20,7 +20,7 @@ class Htp extends StatelessWidget {
                   'For each guess you can receive a hint like "Cow" or "Bull".',
                 style: TextStyle(
                   fontSize: 20.0,
-                  color: Colors.grey[200],
+                  color: Colors.grey[800],
                   letterSpacing: 1.0,
                   wordSpacing: 1.0,
                 ),
@@ -28,11 +28,11 @@ class Htp extends StatelessWidget {
             ),
             SizedBox(height: 10.0),
             Padding(
-              padding: EdgeInsets.fromLTRB(0, 15.0, 10.0, 0),
+              padding: EdgeInsets.fromLTRB(10, 15.0, 10.0, 0),
               child: Text('Example',
                 style: TextStyle(
                   fontSize: 25.0,
-                  color: Colors.black,
+                  color: Colors.grey[800],
                   letterSpacing: 1.0,
                   fontWeight: FontWeight.bold,
                 ),
@@ -44,7 +44,7 @@ class Htp extends StatelessWidget {
                           'Your guess: 1234',
                 style: TextStyle(
                   fontSize: 20.0,
-                  color: Colors.grey[200],
+                  color: Colors.grey[800],
                   letterSpacing: 1.0,
                 ),
               ),
@@ -53,7 +53,7 @@ class Htp extends StatelessWidget {
             Text('Answer',
               style: TextStyle(
                 fontSize: 25.0,
-                color: Colors.black,
+                color: Colors.grey[800],
                 letterSpacing: 1.0,
                 fontWeight: FontWeight.bold,
               ),
@@ -67,7 +67,7 @@ class Htp extends StatelessWidget {
                   '\nGood Luck! ',
                 style: TextStyle(
                   fontSize: 20.0,
-                  color: Colors.grey[200],
+                  color: Colors.grey[800],
                   letterSpacing: 1.0,
                 ),
               ),

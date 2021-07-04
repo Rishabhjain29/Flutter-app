@@ -9,7 +9,15 @@ void main() {
   runApp(MaterialApp(
     debugShowCheckedModeBanner: false,
     home: AnimatedSplashScreen(
-      splash: Image.asset('assets/images/icon-512.png'),
+      splash: Container(
+        width: 185,
+        height: 225,
+          child: Image.asset('assets/images/icon-512.png'),
+      decoration: new BoxDecoration(
+        boxShadow: [new BoxShadow(color: Colors.black, blurRadius: 20)],
+        borderRadius: BorderRadius.circular(20),
+        color: Colors.white
+      ),),
       nextScreen: Home(),
       splashTransition: SplashTransition.scaleTransition,
       splashIconSize: 150,

@@ -101,6 +101,7 @@ class _GameState extends State<Game> {
   Widget build(BuildContext context) {
 
     return Scaffold(
+      backgroundColor: Colors.blueGrey[300],
       body: SafeArea(
         child: Column(
           children: <Widget>[
@@ -113,7 +114,7 @@ class _GameState extends State<Game> {
                       fontSize: 30.0,
                       fontWeight: FontWeight.bold,
                       letterSpacing: 2.0,
-                      color: Colors.brown[700],
+                      color: Colors.white,
                     ),
                 ),
               ),
@@ -131,13 +132,13 @@ class _GameState extends State<Game> {
                         children: <Widget>[
                           Text('${index+1})',
                             style: TextStyle(
-                              fontSize: 20.0
+                              fontSize: 25.0
                             ),
                           ),
                           SizedBox(width: 20.0,),
                           Text('${res[index]}',
                             style: TextStyle(
-                              fontSize: 20.0
+                              fontSize: 25.0
                             ),),
                           SizedBox(width: 20,),
                           Icon(const IconData(0xe901, fontFamily: 'Costumcons'),
@@ -145,15 +146,15 @@ class _GameState extends State<Game> {
                           SizedBox(width: 15,),
                           Text('${bc[index]}',
                             style: TextStyle(
-                              fontSize: 20.0,
-                              color: Colors.red[600],
+                              fontSize: 25.0,
+                              color: Colors.redAccent[400],
                             ),),
                           SizedBox(width: 20,),
                           Icon(const IconData(0xe900, fontFamily: 'Costumcons'),
                             size: 50,),
                           Text('${cc[index]}',
                           style: TextStyle(
-                            fontSize: 20,
+                            fontSize: 25,
                           ),),
 
                         ],
@@ -176,7 +177,7 @@ class _GameState extends State<Game> {
                           width: 70,
                           height: 40,
                           decoration: new BoxDecoration(
-                            color: Colors.grey[400],
+                            color: Colors.grey[300],
                             shape: BoxShape.rectangle,
                             borderRadius: BorderRadius.circular(20.0),
                           ),
@@ -189,7 +190,7 @@ class _GameState extends State<Game> {
                           width: 70,
                           height: 40,
                           decoration: new BoxDecoration(
-                            color: Colors.grey[400],
+                            color: Colors.grey[300],
                             shape: BoxShape.rectangle,
                             borderRadius: BorderRadius.circular(20.0),
                           ),
@@ -200,7 +201,7 @@ class _GameState extends State<Game> {
                           width: 70,
                           height: 40,
                           decoration: new BoxDecoration(
-                            color: Colors.grey[400],
+                            color: Colors.grey[300],
                             shape: BoxShape.rectangle,
                             borderRadius: BorderRadius.circular(20.0),
                           ),
@@ -211,7 +212,7 @@ class _GameState extends State<Game> {
                           width: 70,
                           height: 40,
                           decoration: new BoxDecoration(
-                            color: Colors.grey[400],
+                            color: Colors.grey[300],
                             shape: BoxShape.rectangle,
                             borderRadius: BorderRadius.circular(20.0),
                           ),
@@ -234,7 +235,7 @@ class _GameState extends State<Game> {
                                     borderRadius: BorderRadius.circular(18.0),
                                   ),
                                 ),
-                                backgroundColor: MaterialStateProperty.all(Colors.brown[900]),
+                                backgroundColor: MaterialStateProperty.all(Colors.brown[200]),
                               ),
                             ),
                         ),
@@ -250,7 +251,7 @@ class _GameState extends State<Game> {
                                     borderRadius: BorderRadius.circular(18.0),
                                   ),
                                 ),
-                                backgroundColor: MaterialStateProperty.all(Colors.brown[900]),
+                                backgroundColor: MaterialStateProperty.all(Colors.brown[200]),
                               ),
 
                             ),
@@ -267,7 +268,7 @@ class _GameState extends State<Game> {
                                     borderRadius: BorderRadius.circular(18.0),
                                   ),
                                 ),
-                                backgroundColor: MaterialStateProperty.all(Colors.brown[900]),
+                                backgroundColor: MaterialStateProperty.all(Colors.brown[200]),
                               ),
                             ),
                         ),
@@ -287,7 +288,7 @@ class _GameState extends State<Game> {
                                   borderRadius: BorderRadius.circular(18.0),
                                 ),
                               ),
-                              backgroundColor: MaterialStateProperty.all(Colors.brown[900]),
+                              backgroundColor: MaterialStateProperty.all(Colors.brown[200]),
                             ),
                           ),
                         ),
@@ -303,7 +304,7 @@ class _GameState extends State<Game> {
                                   borderRadius: BorderRadius.circular(18.0),
                                 ),
                               ),
-                              backgroundColor: MaterialStateProperty.all(Colors.brown[900]),
+                              backgroundColor: MaterialStateProperty.all(Colors.brown[200]),
                             ),
                           ),
                         ),
@@ -319,7 +320,7 @@ class _GameState extends State<Game> {
                                   borderRadius: BorderRadius.circular(18.0),
                                 ),
                               ),
-                              backgroundColor: MaterialStateProperty.all(Colors.brown[900]),
+                              backgroundColor: MaterialStateProperty.all(Colors.brown[200]),
                             ),
                           ),
                         ),
@@ -339,7 +340,7 @@ class _GameState extends State<Game> {
                                   borderRadius: BorderRadius.circular(18.0),
                                 ),
                               ),
-                              backgroundColor: MaterialStateProperty.all(Colors.brown[900]),
+                              backgroundColor: MaterialStateProperty.all(Colors.brown[200]),
                             ),
                           ),
                         ),
@@ -355,7 +356,7 @@ class _GameState extends State<Game> {
                                   borderRadius: BorderRadius.circular(18.0),
                                 ),
                               ),
-                              backgroundColor: MaterialStateProperty.all(Colors.brown[900]),
+                              backgroundColor: MaterialStateProperty.all(Colors.brown[200]),
                             ),
                           ),
                         ),
@@ -371,7 +372,7 @@ class _GameState extends State<Game> {
                                   borderRadius: BorderRadius.circular(18.0),
                                 ),
                               ),
-                              backgroundColor: MaterialStateProperty.all(Colors.brown[900]),
+                              backgroundColor: MaterialStateProperty.all(Colors.brown[200]),
                             ),
                           ),
                         ),
@@ -397,7 +398,7 @@ class _GameState extends State<Game> {
                                 borderRadius: BorderRadius.circular(18.0),
                             ),
                            ),
-                          backgroundColor: MaterialStateProperty.all(Colors.red),
+                          backgroundColor: MaterialStateProperty.all(Colors.red[600]),
                       ),
                     )
                     ),
@@ -413,7 +414,7 @@ class _GameState extends State<Game> {
                                   borderRadius: BorderRadius.circular(18.0),
                                 ),
                               ),
-                              backgroundColor: MaterialStateProperty.all(Colors.brown[900]),
+                              backgroundColor: MaterialStateProperty.all(Colors.brown[200]),
                             ),
                           ),
                         ),
@@ -429,7 +430,7 @@ class _GameState extends State<Game> {
                               borderRadius: BorderRadius.circular(18.0),
                             ),
                           ),
-                          backgroundColor: MaterialStateProperty.all(Colors.green),
+                          backgroundColor: MaterialStateProperty.all(Colors.green[600]),
                         ),
                     ),
                     ),

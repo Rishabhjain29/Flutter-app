@@ -1,3 +1,4 @@
+import 'package:cows_and_bulls/pages/game.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -15,10 +16,10 @@ class _HomeState extends State<Home> {
           borderRadius: BorderRadius.circular(25.0),
         ),
       ),
-      backgroundColor: MaterialStateProperty.all(Colors.brown[900]),
+      backgroundColor: MaterialStateProperty.all(Colors.blueGrey[700]),
     );
     return Scaffold(
-      backgroundColor: Colors.brown[500],
+      backgroundColor: Colors.blueGrey[300],
       appBar: AppBar(
         title: Text('COWS & BULLS',
         style: TextStyle(
@@ -26,7 +27,7 @@ class _HomeState extends State<Home> {
           letterSpacing: 2,
         ),),
         centerTitle: true,
-        backgroundColor: Colors.brown[800],
+        backgroundColor: Colors.blueGrey[700],
         elevation: 10.0,
       ),
       body: Center(
